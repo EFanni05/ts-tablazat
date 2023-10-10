@@ -3,7 +3,7 @@ export class Product{
         if(name.trim() == ""){
             throw new Error("Nem lehet üres a Name")
         }
-        else if(price < 0 && price > 100 && isNaN(price)){
+        else if(price < 100 && isNaN(price)){
             throw new Error("Híbás érték")
         }
         else if(code.trim().length != 11){
