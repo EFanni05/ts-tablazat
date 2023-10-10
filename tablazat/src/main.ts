@@ -18,8 +18,7 @@ function Add(){
   row.appendChild(cell1)
   row.appendChild(cell2)
   tbl.appendChild(row)
-  console.log(row);
-  
+  console.log(row)
 }
 
 function ReadIn(){
