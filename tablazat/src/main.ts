@@ -3,7 +3,16 @@ import { Product } from './Product'
 let items:Product[] = []
 
 function Add(){
-  
+  const tbl = document.getElementById('tbl')!
+  const row = document.createElement('tr')
+  const cell = document.createElement('td')
+  for(const vs of items){
+    cell.textContent = `${vs.name}`
+    cell.textContent = `${vs.price}`
+    cell.textContent = `${vs.code}`
+  }
+  row.appendChild(cell)
+  tbl.appendChild(row)
 }
 
 function ReadIn(){
