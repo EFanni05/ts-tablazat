@@ -1,4 +1,4 @@
-import '../node_modules/bootstrap/scss/style.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import { Product } from './Product'
 let items:Product[] = []
 
